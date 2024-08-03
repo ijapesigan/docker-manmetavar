@@ -1,10 +1,9 @@
 ijapesigan/manmetavar
 ================
 Ivan Jacob Agaloos Pesigan
-2024-08-02
+2024-08-03
 
 <!-- README.md is generated from .setup/readme/README.Rmd. Please edit that file -->
-
 <!-- badges: start -->
 
 [![Make
