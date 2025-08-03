@@ -24,7 +24,7 @@ GIT_HUB_USERNAME=ijapesigan
 GIT_HUB_REPO=docker-manmetavar
 GIT_HUB_BRANCH=main
 DOCKER_HUB_USERNAME=ijapesigan
-DOCKER_HUB_CONTAINER=docs
+DOCKER_HUB_CONTAINER=manmetavar
 
 ## container
 TEMP_VAR=$(git ls-remote "https://github.com/$GIT_HUB_USERNAME/$GIT_HUB_REPO".git "$GIT_HUB_BRANCH")
