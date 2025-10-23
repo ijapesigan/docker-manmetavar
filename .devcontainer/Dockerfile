@@ -1,4 +1,4 @@
-FROM ijapesigan/docs
+FROM ijapesigan/manmetavar
 
 ADD scripts /usr/src/local/src
 RUN chmod 777 /usr/src/local/src/setup.sh         && \
@@ -7,4 +7,4 @@ RUN chmod 777 /usr/src/local/src/setup.sh         && \
 
 # extra metadata
 LABEL author="Ivan Jacob Agaloos Pesigan <ijapesigan@gmail.com>"
-LABEL description="ijapesigan/docs container."
+LABEL description="ijapesigan/manmetavar container."

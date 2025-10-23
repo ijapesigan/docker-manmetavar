@@ -7,7 +7,7 @@ bash tinytex.sh
 bash simstatespace.sh
 bash openmx_sys.sh
 bash openmx.sh
-bash fitdtvarmx.sh
+bash fitdtvarmxid.sh
 bash mlvar.sh
 bash metavar.sh
 bash manmetavar.sh
