@@ -9,9 +9,9 @@ RUN /rocker_scripts/install_rstudio.sh
 EXPOSE 8787
 CMD ["/init"]
 
-RUN /rocker_scripts/install_pandoc.sh
+# RUN /rocker_scripts/install_pandoc.sh
 
-RUN /rocker_scripts/install_quarto.sh
+# RUN /rocker_scripts/install_quarto.sh
 
 # custom
 
