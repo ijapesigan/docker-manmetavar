@@ -9,11 +9,9 @@ RUN /rocker_scripts/install_rstudio.sh
 EXPOSE 8787
 CMD ["/init"]
 
-# Temporary suspension until https://github.com/rocker-org/rocker-versioned2/issues/955 is resolved
+RUN /rocker_scripts/install_pandoc.sh
 
-# RUN /rocker_scripts/install_pandoc.sh
-
-# RUN /rocker_scripts/install_quarto.sh
+RUN /rocker_scripts/install_quarto.sh
 
 # custom
 
