@@ -1,4 +1,4 @@
-FROM ijapesigan/dev:latest
+FROM ijapesigan/dev@sha256:995bc53c1b172652ab323f1d258a2e05b0bb489ce106852945e2d9114edb9c64
 
 ENV S6_VERSION="v2.1.0.2"
 ENV RSTUDIO_VERSION="2025.09.1+401"
