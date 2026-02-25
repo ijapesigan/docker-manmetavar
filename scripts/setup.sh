@@ -5,7 +5,6 @@ set -e
 bash rproject.sh
 bash tinytex.sh
 bash simstatespace.sh
-bash openmx_sys.sh
 bash openmx.sh
 bash fitvarmxid.sh
 bash metadyn.sh
