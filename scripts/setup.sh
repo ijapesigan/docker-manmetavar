@@ -6,6 +6,7 @@ bash rproject.sh
 bash tinytex.sh
 bash simstatespace.sh
 bash openmx.sh
+bash lavaan.sh
 bash fitvarmxid.sh
 bash metadyn.sh
 bash manmetavar.sh
