@@ -4,7 +4,7 @@ set -e
 
 R -e "try(remove.packages(pkgs = 'manMetaVAR'))"
 
-R CMD INSTALL manMetaVAR_0.9.7.tar.gz
+R CMD INSTALL manMetaVAR_0.9.8.tar.gz
 
 R -e "library(manMetaVAR)"
 
