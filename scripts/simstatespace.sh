@@ -4,7 +4,7 @@ set -e
 
 R -e "try(remove.packages(pkgs = 'simStateSpace'))"
 
-R CMD INSTALL simStateSpace_1.2.15.tar.gz
+R CMD INSTALL simStateSpace_1.2.16.tar.gz
 
 R -e "library(simStateSpace)"
 

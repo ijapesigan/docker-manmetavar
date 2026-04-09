@@ -4,7 +4,7 @@ set -e
 
 R -e "try(remove.packages(pkgs = 'metaDyn'))"
 
-R CMD INSTALL metaDyn_1.0.0.tar.gz
+R CMD INSTALL metaDyn_1.0.1.tar.gz
 
 R -e "library(metaDyn)"
 
