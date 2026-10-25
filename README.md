@@ -1,43 +1,56 @@
-ijapesigan/manmetavar
-================
-Ivan Jacob Agaloos Pesigan
-2026-10-07
 
-<!-- README.md is generated from .setup/readme/README.Rmd. Please edit that file -->
+<!-- README.md is generated from .setup/readme/README.Rmd, which rProject's
+docker template writes. Edit .setup/readme/description.md, scripts/cran.txt,
+scripts/github.txt, or .setup/scripts/project.R instead. -->
+
+# ijapesigan/manmetavar
 
 <!-- badges: start -->
 
-[![Make
-Project](https://github.com/ijapesigan/docker-manmetavar/actions/workflows/make.yml/badge.svg)](https://github.com/ijapesigan/docker-manmetavar/actions/workflows/make.yml)
 [![Docker Build and Push
 \[multi\]](https://github.com/ijapesigan/docker-manmetavar/actions/workflows/docker-build-push-multi.yml/badge.svg)](https://github.com/ijapesigan/docker-manmetavar/actions/workflows/docker-build-push-multi.yml)
+[![Make
+Project](https://github.com/ijapesigan/docker-manmetavar/actions/workflows/make.yml/badge.svg)](https://github.com/ijapesigan/docker-manmetavar/actions/workflows/make.yml)
+[![Non-ASCII
+Check](https://github.com/ijapesigan/docker-manmetavar/actions/workflows/non-ascii-check.yml/badge.svg)](https://github.com/ijapesigan/docker-manmetavar/actions/workflows/non-ascii-check.yml)
 [![Shell
 Check](https://github.com/ijapesigan/docker-manmetavar/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/ijapesigan/docker-manmetavar/actions/workflows/shellcheck.yml)
 <!-- badges: end -->
 
 ## Description
 
-A Docker container for `R` projects based on the [Rocker
-Project](https://rocker-project.org/).
+The image for the manuscript project
+[manMetaVAR](https://github.com/jeksterslab/manMetaVAR): built on
+`ijapesigan/dev`, with RStudio Server, pandoc, Quarto, TinyTeX, and the
+package versions the manuscript uses (OpenMx 2.22.11, simStateSpace
+1.2.16, fitVARMxID 1.0.6, metaDyn 1.0.4, manMetaVAR 0.5.8).
 
-## Docker Container
+Based on `ijapesigan/dev:latest`; built for linux/amd64 and linux/arm64.
+Source: <https://github.com/ijapesigan/docker-manmetavar>.
 
-To launch `Rstudio Server`, run the following.
+## Use
 
-``` bash
-docker run --rm -ti -e PASSWORD=yourpassword -p 127.0.0.1:8787:8787 ijapesigan/manmetavar
-```
-
-Open `http://localhost:8787` on your web browser to launch
-`Rstudio Server`.
-
-- username: rstudio
-- password: yourpassword
-
-## Apptainer Container
-
-To build the Singularity Image File (SIF), run the following.
+Docker (Docker Hub or the GitHub Container Registry):
 
 ``` bash
-apptainer pull manmetavar.sif docker://ijapesigan/manmetavar:latest
+docker run -it ijapesigan/manmetavar
+docker run -it ghcr.io/ijapesigan/manmetavar
 ```
+
+Apptainer:
+
+``` bash
+apptainer pull manmetavar.sif docker://ijapesigan/manmetavar
+apptainer shell manmetavar.sif
+```
+
+## Builds
+
+- Docker Build and Push \[multi\] (`docker-build-push-multi.yml`): after
+  Make Project
+- Make Project (`make.yml`): on push
+- Non-ASCII Check (`non-ascii-check.yml`): after Make Project
+- Shell Check (`shellcheck.yml`): after Make Project
+
+The images are pushed to Docker Hub and the GitHub Container Registry as
+`ijapesigan/manmetavar:latest`.

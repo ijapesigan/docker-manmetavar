@@ -1,0 +1,1 @@
+The image for the manuscript project [manMetaVAR](https://github.com/jeksterslab/manMetaVAR): built on `ijapesigan/dev`, with RStudio Server, pandoc, Quarto, TinyTeX, and the package versions the manuscript uses (OpenMx 2.22.11, simStateSpace 1.2.16, fitVARMxID 1.0.6, metaDyn 1.0.4, manMetaVAR 0.5.8).

@@ -16,6 +16,11 @@
 #'
 
 project <- "docker-manmetavar"
+type <- "docker"
+# a manuscript image: built on push only (no daily build)
+workflows <- c(
+  "docker-build-push-multi"
+)
 
 rproject_ver <- NULL
 
